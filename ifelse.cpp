@@ -2,14 +2,31 @@
 using namespace std;
 
 int main() {
-    int number;
-    cout << "Enter a number: ";
-    cin >> number;
+    int num1,num2;
+    cout << "Enter values: ";
+    cin >> num1>>num2;
+    char operation;
+    cout<<"Enter the operation you want to perform :";
+    cin>>operation;
+    switch(operation){
+        case '+':
+        cout<<"The sum is :"<<num1+num2;
+        break;
+        case '-':
+        cout<<"The differnece is :"<<num1-num2;
+        break;
+        case '*' :
+        cout<<"The product is :"<<num1*num2;
+        break;
+        case '/':
+        if(num2 == 0){
+            break;
+        }
+        cout<<"The answer is :"<<num1/num2;
+        break;
+        default:
+        cout<<"you havent entered 1 and 2.";
 
-    if (number > 0) {
-        cout << "The number is positive." << endl;
-    } else {
-        cout << "The number is negative or zero." << endl;
     }
 
     return 0;

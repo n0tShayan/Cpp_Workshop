@@ -7,7 +7,6 @@ int main() {
     // Pre-Increment
     cout << "Initial value of x: " << x << endl;
     cout << "Using Pre-Increment (++x): " << ++x << endl;  // x is incremented to 6, then used
-
     // Post-Increment
     cout << "Using Post-Increment (y++): " << y++ << endl; // y is used as 5, then incremented to 6
     cout << "Value of y after Post-Increment: " << y << endl;

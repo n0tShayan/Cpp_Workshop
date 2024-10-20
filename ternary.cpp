@@ -3,11 +3,12 @@ using namespace std;
 
 int main() {
     int number;
+    string result;
     cout << "Enter a number: ";
     cin >> number;
 
-    string result = (number >= 60) ? "Passed" : "Failed";
-    cout << "The number is: " << result << endl;
+    result = (number >= 60) ? "Passed" : "Failed";
+    cout << "The result is: " << result << endl;
 
     return 0;
 }
